@@ -1,0 +1,69 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  
+  <!-- 
+	Started down the maven route but still a long way to go.
+	If you are looking for dependencies you should check the versions in the .classpath file not here as I've not tested with these yet.
+	These are also not the full set as we might load database drivers as well but as they are dynamic they weren't required by the compiler.
+  -->
+  
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>123</groupId>
+  <artifactId>456</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>456</name>
+  <url>http://localhost:8080/sandpit</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+    	<groupId>com.fasterxml.jackson.core</groupId>
+    	<artifactId>jackson-core</artifactId>
+    	<version>2.6.3</version>
+    </dependency>
+    <dependency>
+    	<groupId>javax.servlet</groupId>
+    	<artifactId>servlet-api</artifactId>
+    	<version>2.5</version>
+    	<scope>provided</scope>
+    </dependency>
+    <dependency>
+    	<groupId>com.fasterxml.jackson.core</groupId>
+    	<artifactId>jackson-databind</artifactId>
+    	<version>2.6.3</version>
+    </dependency>
+    <dependency>
+    	<groupId>com.fasterxml.jackson.core</groupId>
+    	<artifactId>jackson-annotations</artifactId>
+    	<version>2.6.3</version>
+    </dependency>
+<dependency>
+	<groupId>commons-httpclient</groupId>
+	<artifactId>commons-httpclient</artifactId>
+	<version>3.1</version>
+</dependency>  
+<dependency>
+	<groupId>org.apache.httpcomponents</groupId>
+	<artifactId>httpclient</artifactId>
+	<version>4.5.1</version>
+</dependency>
+<dependency>
+	<groupId>javax.servlet</groupId>
+	<artifactId>javax.servlet-api</artifactId>
+	<version>3.0.1</version>
+</dependency>
+
+  </dependencies>
+</project>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Page One</title>
+	<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.sprintf.js"></script>
+	<script type="text/javascript" src="../js/sandpitTasks.js"></script>
+	<link rel="stylesheet" href="../css/sandpit.css">
+</head>
+<body>
+
+	<selector>
+		<title>Tasks</title>
+		<!--  here we'll add new widgets to the page and into the content section below -->
+	</selector>
+	<tiles id="tiles">
+	</tiles>
+
+	<script id="tile-template" type="text/x-custom-template">
+	<xform name="@id@">
+	</xform>
+		<tile class="tile" id="tile_@id@">
+			<name>@name@</name>
+			<toolbar>
+				<input type="checkbox" name="active_@id@" id="active_@id@">active</input>
+				<button id="play_@id@">play</button>
+				<button style="display:none" id="pause_@id@">pause</button>
+				<button id="copy_@id@">copy...</button>
+				<button id="edit_@id@">edit...</button>
+			</toolbar>
+		</tile>
+	</script>	
+</body>
+</html>
